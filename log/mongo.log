@@ -1,0 +1,210 @@
+2019-07-10T10:57:05.478+0530 I CONTROL  [main] ***** SERVER RESTARTED *****
+2019-07-10T10:57:05.556+0530 I CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2019-07-10T10:57:06.132+0530 I CONTROL  [initandlisten] MongoDB starting : pid=1490 port=27017 dbpath=data/db 64-bit host=Mohans-Mac-mini.local
+2019-07-10T10:57:06.132+0530 I CONTROL  [initandlisten] db version v4.0.10
+2019-07-10T10:57:06.135+0530 I CONTROL  [initandlisten] git version: c389e7f69f637f7a1ac3cc9fae843b635f20b766
+2019-07-10T10:57:06.135+0530 I CONTROL  [initandlisten] allocator: system
+2019-07-10T10:57:06.135+0530 I CONTROL  [initandlisten] modules: none
+2019-07-10T10:57:06.135+0530 I CONTROL  [initandlisten] build environment:
+2019-07-10T10:57:06.135+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2019-07-10T10:57:06.135+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2019-07-10T10:57:06.148+0530 I CONTROL  [initandlisten] options: { storage: { dbPath: "data/db", directoryPerDB: true }, systemLog: { destination: "file", logAppend: true, path: "log/mongo.log" } }
+2019-07-10T10:57:06.187+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3584M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2019-07-10T10:57:07.552+0530 I STORAGE  [initandlisten] WiredTiger message [1562736427:552550][1490:0x11d5205c0], txn-recover: Set global recovery timestamp: 0
+2019-07-10T10:57:08.366+0530 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2019-07-10T10:57:09.074+0530 I CONTROL  [initandlisten] 
+2019-07-10T10:57:09.074+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2019-07-10T10:57:09.074+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2019-07-10T10:57:09.074+0530 I CONTROL  [initandlisten] 
+2019-07-10T10:57:09.074+0530 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2019-07-10T10:57:09.074+0530 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2019-07-10T10:57:09.074+0530 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2019-07-10T10:57:09.074+0530 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2019-07-10T10:57:09.074+0530 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2019-07-10T10:57:09.075+0530 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2019-07-10T10:57:09.075+0530 I CONTROL  [initandlisten] 
+2019-07-10T10:57:09.245+0530 I STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: 99b18937-0995-4748-8d42-f9d1c48f24d5
+2019-07-10T10:57:10.064+0530 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 4.0
+2019-07-10T10:57:10.356+0530 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: 0a911093-aff4-4b7a-a26e-c45a7477573c
+2019-07-10T10:57:11.007+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'data/db/diagnostic.data'
+2019-07-10T10:57:11.372+0530 I NETWORK  [initandlisten] waiting for connections on port 27017
+2019-07-10T10:57:11.445+0530 I STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with generated UUID: dd1a14ff-5d31-45f5-9e15-623c38137eb8
+2019-07-10T10:57:12.479+0530 I INDEX    [LogicalSessionCacheRefresh] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
+2019-07-10T10:57:12.479+0530 I INDEX    [LogicalSessionCacheRefresh] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2019-07-10T10:57:12.701+0530 I INDEX    [LogicalSessionCacheRefresh] build index done.  scanned 0 total records. 0 secs
+2019-07-10T10:57:12.701+0530 I COMMAND  [LogicalSessionCacheRefresh] command config.$cmd command: createIndexes { createIndexes: "system.sessions", indexes: [ { key: { lastUse: 1 }, name: "lsidTTLIndex", expireAfterSeconds: 1800 } ], $db: "config" } numYields:0 reslen:114 locks:{ Global: { acquireCount: { r: 2, w: 2 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } storage:{} protocol:op_msg 1255ms
+2019-07-10T11:04:06.655+0530 I CONTROL  [main] ***** SERVER RESTARTED *****
+2019-07-10T11:04:06.670+0530 I CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2019-07-10T11:04:06.681+0530 I CONTROL  [initandlisten] MongoDB starting : pid=1645 port=27017 dbpath=data/db 64-bit host=Mohans-Mac-mini.local
+2019-07-10T11:04:06.681+0530 I CONTROL  [initandlisten] db version v4.0.10
+2019-07-10T11:04:06.681+0530 I CONTROL  [initandlisten] git version: c389e7f69f637f7a1ac3cc9fae843b635f20b766
+2019-07-10T11:04:06.681+0530 I CONTROL  [initandlisten] allocator: system
+2019-07-10T11:04:06.681+0530 I CONTROL  [initandlisten] modules: none
+2019-07-10T11:04:06.681+0530 I CONTROL  [initandlisten] build environment:
+2019-07-10T11:04:06.681+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2019-07-10T11:04:06.681+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2019-07-10T11:04:06.681+0530 I CONTROL  [initandlisten] options: { storage: { dbPath: "data/db", directoryPerDB: true }, systemLog: { destination: "file", logAppend: true, path: "log/mongo.log" } }
+2019-07-10T11:04:06.682+0530 E STORAGE  [initandlisten] Failed to set up listener: SocketException: Address already in use
+2019-07-10T11:04:06.750+0530 I CONTROL  [initandlisten] now exiting
+2019-07-10T11:04:06.751+0530 I CONTROL  [initandlisten] shutting down with code:48
+2019-07-10T11:04:12.312+0530 I CONTROL  [main] ***** SERVER RESTARTED *****
+2019-07-10T11:04:12.313+0530 I CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2019-07-10T11:04:12.325+0530 I CONTROL  [initandlisten] MongoDB starting : pid=1646 port=27017 dbpath=data/db 64-bit host=Mohans-Mac-mini.local
+2019-07-10T11:04:12.325+0530 I CONTROL  [initandlisten] db version v4.0.10
+2019-07-10T11:04:12.325+0530 I CONTROL  [initandlisten] git version: c389e7f69f637f7a1ac3cc9fae843b635f20b766
+2019-07-10T11:04:12.325+0530 I CONTROL  [initandlisten] allocator: system
+2019-07-10T11:04:12.325+0530 I CONTROL  [initandlisten] modules: none
+2019-07-10T11:04:12.325+0530 I CONTROL  [initandlisten] build environment:
+2019-07-10T11:04:12.325+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2019-07-10T11:04:12.325+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2019-07-10T11:04:12.325+0530 I CONTROL  [initandlisten] options: { storage: { dbPath: "data/db", directoryPerDB: true }, systemLog: { destination: "file", logAppend: true, path: "log/mongo.log" } }
+2019-07-10T11:04:12.326+0530 E STORAGE  [initandlisten] Failed to set up listener: SocketException: Address already in use
+2019-07-10T11:04:12.326+0530 I CONTROL  [initandlisten] now exiting
+2019-07-10T11:04:12.326+0530 I CONTROL  [initandlisten] shutting down with code:48
+2019-07-10T11:15:05.428+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:50420 #1 (1 connection now open)
+2019-07-10T11:15:05.437+0530 I NETWORK  [conn1] received client metadata from 127.0.0.1:50420 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.10" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "18.6.0" } }
+2019-07-10T11:17:11.712+0530 I COMMAND  [LogicalSessionCacheRefresh] command config.$cmd command: update { update: "system.sessions", ordered: false, allowImplicitCollectionCreation: false, writeConcern: { w: "majority", wtimeout: 15000 }, $db: "config" } numYields:0 reslen:171 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { w: 1 } }, Collection: { acquireCount: { w: 1 } } } storage:{} protocol:op_msg 222ms
+2019-07-10T11:20:22.338+0530 I STORAGE  [conn1] createCollection: admin.system.users with generated UUID: 097cc2c8-f7ab-4d07-8510-2705774d570d
+2019-07-10T11:20:22.972+0530 I COMMAND  [conn1] command admin.system.users appName: "MongoDB Shell" command: insert { insert: "system.users", bypassDocumentValidation: false, ordered: true, $db: "admin" } ninserted:1 keysInserted:2 numYields:0 reslen:45 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { W: 3 } }, Collection: { acquireCount: { w: 2 } } } storage:{} protocol:op_msg 654ms
+2019-07-10T11:20:22.972+0530 I COMMAND  [conn1] command users.$cmd appName: "MongoDB Shell" command: createUser { createUser: "user1", pwd: "xxx", roles: [ "readWrite", "dbAdmin" ], digestPassword: true, writeConcern: { w: "majority", wtimeout: 600000.0 }, lsid: { id: UUID("50b4a9bd-9b46-4ae8-8b6c-d85bad52b30c") }, $db: "users" } numYields:0 reslen:38 locks:{ Global: { acquireCount: { r: 6, w: 4 } }, Database: { acquireCount: { W: 4 } }, Collection: { acquireCount: { w: 3 } } } storage:{} protocol:op_msg 801ms
+2019-07-10T11:39:50.248+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:50536 #2 (2 connections now open)
+2019-07-10T11:59:31.663+0530 I NETWORK  [conn2] end connection 127.0.0.1:50536 (1 connection now open)
+2019-07-10T12:39:15.226+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51101 #3 (2 connections now open)
+2019-07-10T12:39:15.282+0530 I NETWORK  [conn3] received client metadata from 127.0.0.1:51101 conn3: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T12:39:15.340+0530 I NETWORK  [conn3] end connection 127.0.0.1:51101 (1 connection now open)
+2019-07-10T12:39:54.269+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51104 #4 (2 connections now open)
+2019-07-10T12:39:54.278+0530 I NETWORK  [conn4] received client metadata from 127.0.0.1:51104 conn4: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T12:39:54.296+0530 I NETWORK  [conn4] end connection 127.0.0.1:51104 (1 connection now open)
+2019-07-10T12:39:59.002+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51105 #5 (2 connections now open)
+2019-07-10T12:39:59.008+0530 I NETWORK  [conn5] received client metadata from 127.0.0.1:51105 conn5: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T12:39:59.026+0530 I NETWORK  [conn5] end connection 127.0.0.1:51105 (1 connection now open)
+2019-07-10T12:41:53.746+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51122 #6 (2 connections now open)
+2019-07-10T12:41:53.769+0530 I NETWORK  [conn6] Error receiving request from client: ProtocolError: Client sent an HTTP request over a native MongoDB connection. Ending connection from 127.0.0.1:51122 (connection id: 6)
+2019-07-10T12:41:53.770+0530 I NETWORK  [conn6] end connection 127.0.0.1:51122 (1 connection now open)
+2019-07-10T12:41:53.797+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51124 #7 (2 connections now open)
+2019-07-10T12:41:53.797+0530 I NETWORK  [conn7] Error receiving request from client: ProtocolError: Client sent an HTTP request over a native MongoDB connection. Ending connection from 127.0.0.1:51124 (connection id: 7)
+2019-07-10T12:41:53.797+0530 I NETWORK  [conn7] end connection 127.0.0.1:51124 (1 connection now open)
+2019-07-10T12:42:19.779+0530 I NETWORK  [conn1] end connection 127.0.0.1:50420 (0 connections now open)
+2019-07-10T12:42:24.412+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51126 #8 (1 connection now open)
+2019-07-10T12:42:24.413+0530 I NETWORK  [conn8] Error receiving request from client: ProtocolError: Client sent an HTTP request over a native MongoDB connection. Ending connection from 127.0.0.1:51126 (connection id: 8)
+2019-07-10T12:42:24.413+0530 I NETWORK  [conn8] end connection 127.0.0.1:51126 (0 connections now open)
+2019-07-10T12:42:25.860+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51128 #9 (1 connection now open)
+2019-07-10T12:42:25.860+0530 I NETWORK  [conn9] Error receiving request from client: ProtocolError: Client sent an HTTP request over a native MongoDB connection. Ending connection from 127.0.0.1:51128 (connection id: 9)
+2019-07-10T12:42:25.860+0530 I NETWORK  [conn9] end connection 127.0.0.1:51128 (0 connections now open)
+2019-07-10T12:42:26.612+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51130 #10 (1 connection now open)
+2019-07-10T12:42:26.612+0530 I NETWORK  [conn10] Error receiving request from client: ProtocolError: Client sent an HTTP request over a native MongoDB connection. Ending connection from 127.0.0.1:51130 (connection id: 10)
+2019-07-10T12:42:26.612+0530 I NETWORK  [conn10] end connection 127.0.0.1:51130 (0 connections now open)
+2019-07-10T12:42:36.549+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51134 #11 (1 connection now open)
+2019-07-10T12:42:36.550+0530 I NETWORK  [conn11] Error receiving request from client: ProtocolError: Client sent an HTTP request over a native MongoDB connection. Ending connection from 127.0.0.1:51134 (connection id: 11)
+2019-07-10T12:42:36.550+0530 I NETWORK  [conn11] end connection 127.0.0.1:51134 (0 connections now open)
+2019-07-10T12:47:24.555+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51205 #12 (1 connection now open)
+2019-07-10T12:47:24.570+0530 I NETWORK  [conn12] received client metadata from 127.0.0.1:51205 conn12: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T12:47:24.609+0530 I NETWORK  [conn12] end connection 127.0.0.1:51205 (0 connections now open)
+2019-07-10T12:51:11.204+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51229 #13 (1 connection now open)
+2019-07-10T12:51:11.219+0530 I NETWORK  [conn13] received client metadata from 127.0.0.1:51229 conn13: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T12:51:33.063+0530 I NETWORK  [conn13] end connection 127.0.0.1:51229 (0 connections now open)
+2019-07-10T12:51:52.476+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51239 #14 (1 connection now open)
+2019-07-10T12:51:52.487+0530 I NETWORK  [conn14] received client metadata from 127.0.0.1:51239 conn14: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T12:52:01.958+0530 I STORAGE  [conn14] createCollection: users.notes with generated UUID: 28b5397d-6cb3-4156-b3df-648a0df1ccc0
+2019-07-10T12:52:02.700+0530 I COMMAND  [conn14] command users.notes command: insert { insert: "notes", ordered: true, $db: "users" } ninserted:1 keysInserted:1 numYields:0 reslen:60 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } storage:{} protocol:op_query 742ms
+2019-07-10T12:53:45.156+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51261 #15 (2 connections now open)
+2019-07-10T12:53:45.157+0530 I NETWORK  [conn15] Error receiving request from client: ProtocolError: Client sent an HTTP request over a native MongoDB connection. Ending connection from 127.0.0.1:51261 (connection id: 15)
+2019-07-10T12:53:45.157+0530 I NETWORK  [conn15] end connection 127.0.0.1:51261 (1 connection now open)
+2019-07-10T12:54:10.685+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51262 #16 (2 connections now open)
+2019-07-10T12:54:10.686+0530 I NETWORK  [conn16] received client metadata from 127.0.0.1:51262 conn16: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.10" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "18.6.0" } }
+2019-07-10T13:02:40.510+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51307 #17 (3 connections now open)
+2019-07-10T13:02:40.529+0530 I NETWORK  [conn17] received client metadata from 127.0.0.1:51307 conn17: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T13:02:40.589+0530 I NETWORK  [conn17] end connection 127.0.0.1:51307 (2 connections now open)
+2019-07-10T13:02:43.883+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51308 #18 (3 connections now open)
+2019-07-10T13:02:43.889+0530 I NETWORK  [conn18] received client metadata from 127.0.0.1:51308 conn18: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T13:02:43.897+0530 I NETWORK  [conn18] end connection 127.0.0.1:51308 (2 connections now open)
+2019-07-10T13:05:13.699+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51326 #19 (3 connections now open)
+2019-07-10T13:05:13.705+0530 I NETWORK  [conn19] received client metadata from 127.0.0.1:51326 conn19: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T13:05:13.722+0530 I NETWORK  [conn19] end connection 127.0.0.1:51326 (2 connections now open)
+2019-07-10T13:05:18.424+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51328 #20 (3 connections now open)
+2019-07-10T13:05:18.430+0530 I NETWORK  [conn20] received client metadata from 127.0.0.1:51328 conn20: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T13:05:18.447+0530 I NETWORK  [conn20] end connection 127.0.0.1:51328 (2 connections now open)
+2019-07-10T13:05:36.280+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51330 #21 (3 connections now open)
+2019-07-10T13:05:36.286+0530 I NETWORK  [conn21] received client metadata from 127.0.0.1:51330 conn21: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T13:05:36.303+0530 I NETWORK  [conn21] end connection 127.0.0.1:51330 (2 connections now open)
+2019-07-10T13:05:40.995+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51331 #22 (3 connections now open)
+2019-07-10T13:05:41.002+0530 I NETWORK  [conn22] received client metadata from 127.0.0.1:51331 conn22: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T13:05:41.018+0530 I NETWORK  [conn22] end connection 127.0.0.1:51331 (2 connections now open)
+2019-07-10T13:05:44.746+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51332 #23 (3 connections now open)
+2019-07-10T13:05:44.752+0530 I NETWORK  [conn23] received client metadata from 127.0.0.1:51332 conn23: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T13:05:44.768+0530 I NETWORK  [conn23] end connection 127.0.0.1:51332 (2 connections now open)
+2019-07-10T13:06:28.359+0530 I NETWORK  [conn16] end connection 127.0.0.1:51262 (1 connection now open)
+2019-07-10T13:06:37.615+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51338 #24 (2 connections now open)
+2019-07-10T13:06:37.621+0530 I NETWORK  [conn24] received client metadata from 127.0.0.1:51338 conn24: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T13:06:37.638+0530 I NETWORK  [conn24] end connection 127.0.0.1:51338 (1 connection now open)
+2019-07-10T13:09:07.646+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51346 #25 (2 connections now open)
+2019-07-10T13:09:07.652+0530 I NETWORK  [conn25] received client metadata from 127.0.0.1:51346 conn25: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T13:09:07.670+0530 I NETWORK  [conn25] end connection 127.0.0.1:51346 (1 connection now open)
+2019-07-10T13:10:00.583+0530 I NETWORK  [conn14] end connection 127.0.0.1:51239 (0 connections now open)
+2019-07-10T13:10:17.203+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51349 #26 (1 connection now open)
+2019-07-10T13:10:17.210+0530 I NETWORK  [conn26] received client metadata from 127.0.0.1:51349 conn26: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T13:51:42.555+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51453 #27 (2 connections now open)
+2019-07-10T13:51:42.582+0530 I NETWORK  [conn27] received client metadata from 127.0.0.1:51453 conn27: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T13:51:42.609+0530 I NETWORK  [conn27] end connection 127.0.0.1:51453 (1 connection now open)
+2019-07-10T13:52:09.695+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51455 #28 (2 connections now open)
+2019-07-10T13:52:09.703+0530 I NETWORK  [conn28] received client metadata from 127.0.0.1:51455 conn28: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T13:52:09.720+0530 I NETWORK  [conn28] end connection 127.0.0.1:51455 (1 connection now open)
+2019-07-10T13:52:20.400+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51456 #29 (2 connections now open)
+2019-07-10T13:52:20.407+0530 I NETWORK  [conn29] received client metadata from 127.0.0.1:51456 conn29: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T13:52:20.427+0530 I NETWORK  [conn29] end connection 127.0.0.1:51456 (1 connection now open)
+2019-07-10T13:52:32.483+0530 I NETWORK  [conn26] end connection 127.0.0.1:51349 (0 connections now open)
+2019-07-10T13:52:45.207+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51458 #30 (1 connection now open)
+2019-07-10T13:52:45.214+0530 I NETWORK  [conn30] received client metadata from 127.0.0.1:51458 conn30: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T13:53:34.658+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51463 #31 (2 connections now open)
+2019-07-10T13:53:34.658+0530 I NETWORK  [conn31] received client metadata from 127.0.0.1:51463 conn31: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.10" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "18.6.0" } }
+2019-07-10T15:06:53.659+0530 I NETWORK  [conn30] end connection 127.0.0.1:51458 (1 connection now open)
+2019-07-10T15:07:09.609+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51837 #32 (2 connections now open)
+2019-07-10T15:07:09.614+0530 I NETWORK  [conn32] received client metadata from 127.0.0.1:51837 conn32: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T15:08:38.188+0530 I STORAGE  [conn32] createCollection: users.users with generated UUID: c9ff146d-f082-4b93-b42e-84d2a6547895
+2019-07-10T15:08:38.803+0530 I COMMAND  [conn32] command users.users command: insert { insert: "users", ordered: true, $db: "users" } ninserted:1 keysInserted:1 numYields:0 reslen:60 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } storage:{} protocol:op_query 614ms
+2019-07-10T15:20:03.571+0530 I NETWORK  [conn32] end connection 127.0.0.1:51837 (1 connection now open)
+2019-07-10T15:20:06.274+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51875 #33 (2 connections now open)
+2019-07-10T15:20:06.280+0530 I NETWORK  [conn33] received client metadata from 127.0.0.1:51875 conn33: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T15:20:06.295+0530 I NETWORK  [conn33] end connection 127.0.0.1:51875 (1 connection now open)
+2019-07-10T15:20:39.918+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51877 #34 (2 connections now open)
+2019-07-10T15:20:39.931+0530 I NETWORK  [conn34] received client metadata from 127.0.0.1:51877 conn34: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T15:20:39.979+0530 I NETWORK  [conn34] end connection 127.0.0.1:51877 (1 connection now open)
+2019-07-10T15:21:10.496+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51879 #35 (2 connections now open)
+2019-07-10T15:21:10.509+0530 I NETWORK  [conn35] received client metadata from 127.0.0.1:51879 conn35: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T15:21:10.546+0530 I NETWORK  [conn35] end connection 127.0.0.1:51879 (1 connection now open)
+2019-07-10T15:21:35.299+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51884 #36 (2 connections now open)
+2019-07-10T15:21:35.310+0530 I NETWORK  [conn36] received client metadata from 127.0.0.1:51884 conn36: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T15:21:35.336+0530 I NETWORK  [conn36] end connection 127.0.0.1:51884 (1 connection now open)
+2019-07-10T15:21:46.668+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51886 #37 (2 connections now open)
+2019-07-10T15:21:46.677+0530 I NETWORK  [conn37] received client metadata from 127.0.0.1:51886 conn37: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T15:21:46.703+0530 I NETWORK  [conn37] end connection 127.0.0.1:51886 (1 connection now open)
+2019-07-10T15:23:30.445+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51889 #38 (2 connections now open)
+2019-07-10T15:23:30.501+0530 I NETWORK  [conn38] received client metadata from 127.0.0.1:51889 conn38: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T15:45:23.366+0530 I NETWORK  [conn38] end connection 127.0.0.1:51889 (1 connection now open)
+2019-07-10T15:45:27.088+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:52047 #39 (2 connections now open)
+2019-07-10T15:45:27.094+0530 I NETWORK  [conn39] received client metadata from 127.0.0.1:52047 conn39: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T15:45:27.120+0530 I NETWORK  [conn39] end connection 127.0.0.1:52047 (1 connection now open)
+2019-07-10T15:46:19.205+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:52052 #40 (2 connections now open)
+2019-07-10T15:46:19.211+0530 I NETWORK  [conn40] received client metadata from 127.0.0.1:52052 conn40: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T15:46:19.218+0530 I NETWORK  [conn40] end connection 127.0.0.1:52052 (1 connection now open)
+2019-07-10T15:47:11.153+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:52055 #41 (2 connections now open)
+2019-07-10T15:47:11.159+0530 I NETWORK  [conn41] received client metadata from 127.0.0.1:52055 conn41: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T15:47:11.167+0530 I NETWORK  [conn41] end connection 127.0.0.1:52055 (1 connection now open)
+2019-07-10T15:47:25.131+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:52057 #42 (2 connections now open)
+2019-07-10T15:47:25.138+0530 I NETWORK  [conn42] received client metadata from 127.0.0.1:52057 conn42: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T15:47:25.146+0530 I NETWORK  [conn42] end connection 127.0.0.1:52057 (1 connection now open)
+2019-07-10T15:47:56.299+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:52060 #43 (2 connections now open)
+2019-07-10T15:47:56.305+0530 I NETWORK  [conn43] received client metadata from 127.0.0.1:52060 conn43: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T15:47:56.313+0530 I NETWORK  [conn43] end connection 127.0.0.1:52060 (1 connection now open)
+2019-07-10T15:54:30.993+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:52120 #44 (2 connections now open)
+2019-07-10T15:54:31.008+0530 I NETWORK  [conn44] received client metadata from 127.0.0.1:52120 conn44: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T15:54:31.024+0530 I NETWORK  [conn44] end connection 127.0.0.1:52120 (1 connection now open)
+2019-07-10T16:00:17.722+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:52137 #45 (2 connections now open)
+2019-07-10T16:00:17.737+0530 I NETWORK  [conn45] received client metadata from 127.0.0.1:52137 conn45: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T16:00:17.754+0530 I NETWORK  [conn45] end connection 127.0.0.1:52137 (1 connection now open)
+2019-07-10T16:01:55.268+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:52142 #46 (2 connections now open)
+2019-07-10T16:01:55.274+0530 I NETWORK  [conn46] received client metadata from 127.0.0.1:52142 conn46: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T16:01:55.281+0530 I NETWORK  [conn46] end connection 127.0.0.1:52142 (1 connection now open)
+2019-07-10T16:02:53.850+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:52144 #47 (2 connections now open)
+2019-07-10T16:02:53.857+0530 I NETWORK  [conn47] received client metadata from 127.0.0.1:52144 conn47: { driver: { name: "nodejs", version: "2.2.16" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "18.6.0" }, platform: "Node.js v10.12.0, LE, mongodb-core: 2.1.2" }
+2019-07-10T16:02:53.865+0530 I NETWORK  [conn47] end connection 127.0.0.1:52144 (1 connection now open)
