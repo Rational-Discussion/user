@@ -1,16 +1,17 @@
 var ObjectID = require('mongodb').ObjectID;
-var handler = require('./handlers.js');
+var handler = require('./handlers');
+//import * as han from './handlers.js';
 
 module.exports = function(app, db) {
     // Read
-    app.get('/user/:id', handler.getUser(req, res));
+    app.get('/user/:id', handler.getUser);
 
     // Post
-    app.post('/user/create', handler.createUser(req, res));
+    app.post('/user/create', handler.createUser);
 
     // Delete
-    app.delete('/user/delete/:id', handler.deleteUser(req, res));
+    app.delete('/user/delete/:id', handler.deleteUser);
 
     //Update
-    app.put('/user/edit/:id', handler.updateUser(req, res));
+    app.put('/user/edit/:id', handler.updateUser);
 };

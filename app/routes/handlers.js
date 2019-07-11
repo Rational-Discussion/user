@@ -1,5 +1,6 @@
-module.exports = {
-    getUser : function getUser(req, res) {
+var ObjectID = require('mongodb').ObjectID;
+
+module.exports.getUser = function getUser(req, res) {
         const id = req.params.id;
         const details = {'_id' : new ObjectID(id)  };
         db.collection('users').findOne(details, (err, item) => {
@@ -9,9 +10,9 @@ module.exports = {
                 res.send(item);
             }
         });
-    },
+    }
 
-    createUser: function createUser(req, res) {
+module.exports.createUser = function createUser(req, res) {
         const user = { name: req.body.name, password: req.body.password };
         db.collection('users').insert(user, (err, result) => {
             if(err) {
@@ -20,9 +21,9 @@ module.exports = {
                 res.send(result.ops[0]);
             }
         });
-    },
+    }
 
-    deleteUser : function deleteUser(req, res) {
+module.exports.deleteUser = function deleteUser(req, res) {
         const id = req.params.id;
         const details = { '_id' : new ObjectID(id) };
         db.collection('users').remove(details, (err, item) => {
@@ -32,9 +33,9 @@ module.exports = {
                 res.send('Note ' + id + 'deleted!');
             }
         });
-    },
+    }
 
-    updateUser : function updateUser(req, res) {
+module.exports.updateUser = function updateUser(req, res) {
         const id = req.params.id;
         const details = {'_id': new ObjectID(id) };
         const user = { name: req.body.name, password: req.body.password };
@@ -46,4 +47,3 @@ module.exports = {
             }
         });
     }
-}
